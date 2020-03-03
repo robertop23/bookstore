@@ -43,7 +43,7 @@
 ## **Usage instructions**
 
 1. Clone this repository
-2. cd ebookstore
+2. cd bookstore
 3. Run Docker container:
      docker-compose up --build
 4. Open frontend: http://127.0.0.1:3000/ login as "userconsumer"
