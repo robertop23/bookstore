@@ -46,6 +46,6 @@
 2. cd bookstore
 3. Run Docker container:
      docker-compose up --build
-4. Open frontend: http://127.0.0.1:3000/ login as "userconsumer"
+4. Open frontend: http://127.0.0.1/ login as "userconsumer"
 5. Rent or Purchase a book clicking on the corresponding book and button
 6. Open http://127.0.0.1:8000/admin/ login as admin and check the earnings table
