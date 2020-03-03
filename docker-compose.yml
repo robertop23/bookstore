@@ -1,0 +1,45 @@
+version: '3.7'
+
+services:
+  backend:
+    build: ./backend
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./backend/:/usr/src/backend/
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.backend.env.dev
+    depends_on:
+      - db
+  db:
+    image: postgres:12.0-alpine
+    volumes:
+      - pgdata:/var/lib/postgresql/data/
+    ports:
+      - 54320:5432
+    environment:
+      - POSTGRES_DB=bookstore
+      - POSTGRES_USER=dbadmin
+      - POSTGRES_PASSWORD=rc7Xb#YSW\m~{.Av
+
+  frontend:
+    build: ./frontend
+    restart: always
+    container_name: frontend
+    depends_on:
+      - backend
+    command:
+      "npm run start"
+
+  nginx:
+    image: nginx:1.15
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - frontend
+
+volumes:
+  pgdata:

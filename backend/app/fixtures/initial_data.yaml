@@ -1,0 +1,821 @@
+- model: contenttypes.contenttype
+  pk: 1
+  fields:
+    app_label: admin
+    model: logentry
+- model: contenttypes.contenttype
+  pk: 2
+  fields:
+    app_label: auth
+    model: permission
+- model: contenttypes.contenttype
+  pk: 3
+  fields:
+    app_label: auth
+    model: group
+- model: contenttypes.contenttype
+  pk: 4
+  fields:
+    app_label: auth
+    model: user
+- model: contenttypes.contenttype
+  pk: 5
+  fields:
+    app_label: contenttypes
+    model: contenttype
+- model: contenttypes.contenttype
+  pk: 6
+  fields:
+    app_label: sessions
+    model: session
+- model: bookstore.store
+  pk: 1
+  fields:
+    name: Kindlezon US
+    country: US
+- model: bookstore.store
+  pk: 2
+  fields:
+    name: Kindlezon CA
+    country: CA
+- model: bookstore.earning
+  pk: 1
+  fields:
+    author: 1
+    publisher: null
+    earnings: 0.0
+    withdrawed: 0.0
+- model: bookstore.earning
+  pk: 2
+  fields:
+    author: null
+    publisher: 1
+    earnings: 0.0
+    withdrawed: 0.0
+- model: bookstore.category
+  pk: 1
+  fields:
+    name: Mythology
+- model: bookstore.category
+  pk: 2
+  fields:
+    name: Science
+- model: bookstore.category
+  pk: 3
+  fields:
+    name: Comics
+- model: bookstore.category
+  pk: 4
+  fields:
+    name: Fantasy
+- model: bookstore.book
+  pk: 1
+  fields:
+    title: Early Irish Myths and Sagas
+    publish_date: 2020-03-03
+    summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+      parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+      justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+      ut, imperdiet a, venenatis vitae, justo.
+    cover: bookstore/covers/Early_Irish_Myths_and_Sagas_IqvItcc.jpg
+    category: 1
+    author: 1
+    publisher: null
+    store: 1
+    book_content: ''
+- model: bookstore.book
+  pk: 2
+  fields:
+    title: A Brief History of Time
+    publish_date: 2020-03-03
+    summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+      parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+      justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+      ut, imperdiet a, venenatis vitae, justo.
+    cover: bookstore/covers/A_Brief_History_of_Time_jtw2uIz.jpg
+    category: 2
+    author: 1
+    publisher: null
+    store: 1
+    book_content: ''
+- model: bookstore.book
+  pk: 3
+  fields:
+    title: 'Comic Book Culture: An Illustrated History Ron Goulart'
+    publish_date: 2020-03-03
+    summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+      parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+      justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+      ut, imperdiet a, venenatis vitae, justo.
+    cover: bookstore/covers/Comic_Book_Culture-_An_Illustrated_History_Ron_Goulart_gVJDobf.jpg
+    category: 3
+    author: null
+    publisher: 1
+    store: 1
+    book_content: ''
+- model: bookstore.book
+  pk: 4
+  fields:
+    title: Harry Potter and the Sorcerer's Stone
+    publish_date: 2020-03-03
+    summary: "Harry Potter has never been the star of a Quidditch team, scoring points\
+      \ while riding a broom far above the ground. He knows no spells, has never helped\
+      \ to hatch a dragon, and has never worn a cloak of invisibility.\r\n\r\nAll\
+      \ he knows is a miserable life with the Dursleys, his horrible aunt and uncle,\
+      \ and their abominable son, Dudley - a great big swollen spoiled bully. Harry's\
+      \ room is a tiny closet at the foot of the stairs, and he hasn't had a birthday\
+      \ party in eleven years."
+    cover: bookstore/covers/empty_book.png
+    category: 4
+    author: 1
+    publisher: null
+    store: 1
+    book_content: ''
+- model: auth.permission
+  pk: 1
+  fields:
+    name: Can add log entry
+    content_type: 1
+    codename: add_logentry
+- model: auth.permission
+  pk: 2
+  fields:
+    name: Can change log entry
+    content_type: 1
+    codename: change_logentry
+- model: auth.permission
+  pk: 3
+  fields:
+    name: Can delete log entry
+    content_type: 1
+    codename: delete_logentry
+- model: auth.permission
+  pk: 4
+  fields:
+    name: Can view log entry
+    content_type: 1
+    codename: view_logentry
+- model: auth.permission
+  pk: 5
+  fields:
+    name: Can add permission
+    content_type: 2
+    codename: add_permission
+- model: auth.permission
+  pk: 6
+  fields:
+    name: Can change permission
+    content_type: 2
+    codename: change_permission
+- model: auth.permission
+  pk: 7
+  fields:
+    name: Can delete permission
+    content_type: 2
+    codename: delete_permission
+- model: auth.permission
+  pk: 8
+  fields:
+    name: Can view permission
+    content_type: 2
+    codename: view_permission
+- model: auth.permission
+  pk: 9
+  fields:
+    name: Can add group
+    content_type: 3
+    codename: add_group
+- model: auth.permission
+  pk: 10
+  fields:
+    name: Can change group
+    content_type: 3
+    codename: change_group
+- model: auth.permission
+  pk: 11
+  fields:
+    name: Can delete group
+    content_type: 3
+    codename: delete_group
+- model: auth.permission
+  pk: 12
+  fields:
+    name: Can view group
+    content_type: 3
+    codename: view_group
+- model: auth.permission
+  pk: 13
+  fields:
+    name: Can add user
+    content_type: 4
+    codename: add_user
+- model: auth.permission
+  pk: 14
+  fields:
+    name: Can change user
+    content_type: 4
+    codename: change_user
+- model: auth.permission
+  pk: 15
+  fields:
+    name: Can delete user
+    content_type: 4
+    codename: delete_user
+- model: auth.permission
+  pk: 16
+  fields:
+    name: Can view user
+    content_type: 4
+    codename: view_user
+- model: auth.permission
+  pk: 17
+  fields:
+    name: Can add content type
+    content_type: 5
+    codename: add_contenttype
+- model: auth.permission
+  pk: 18
+  fields:
+    name: Can change content type
+    content_type: 5
+    codename: change_contenttype
+- model: auth.permission
+  pk: 19
+  fields:
+    name: Can delete content type
+    content_type: 5
+    codename: delete_contenttype
+- model: auth.permission
+  pk: 20
+  fields:
+    name: Can view content type
+    content_type: 5
+    codename: view_contenttype
+- model: auth.permission
+  pk: 21
+  fields:
+    name: Can add session
+    content_type: 6
+    codename: add_session
+- model: auth.permission
+  pk: 22
+  fields:
+    name: Can change session
+    content_type: 6
+    codename: change_session
+- model: auth.permission
+  pk: 23
+  fields:
+    name: Can delete session
+    content_type: 6
+    codename: delete_session
+- model: auth.permission
+  pk: 24
+  fields:
+    name: Can view session
+    content_type: 6
+    codename: view_session
+- model: auth.permission
+  pk: 25
+  fields:
+    name: Can add author
+    content_type: 7
+    codename: add_author
+- model: auth.permission
+  pk: 26
+  fields:
+    name: Can change author
+    content_type: 7
+    codename: change_author
+- model: auth.permission
+  pk: 27
+  fields:
+    name: Can delete author
+    content_type: 7
+    codename: delete_author
+- model: auth.permission
+  pk: 28
+  fields:
+    name: Can view author
+    content_type: 7
+    codename: view_author
+- model: auth.permission
+  pk: 29
+  fields:
+    name: Can add book
+    content_type: 8
+    codename: add_book
+- model: auth.permission
+  pk: 30
+  fields:
+    name: Can change book
+    content_type: 8
+    codename: change_book
+- model: auth.permission
+  pk: 31
+  fields:
+    name: Can delete book
+    content_type: 8
+    codename: delete_book
+- model: auth.permission
+  pk: 32
+  fields:
+    name: Can view book
+    content_type: 8
+    codename: view_book
+- model: auth.permission
+  pk: 33
+  fields:
+    name: Can add category
+    content_type: 9
+    codename: add_category
+- model: auth.permission
+  pk: 34
+  fields:
+    name: Can change category
+    content_type: 9
+    codename: change_category
+- model: auth.permission
+  pk: 35
+  fields:
+    name: Can delete category
+    content_type: 9
+    codename: delete_category
+- model: auth.permission
+  pk: 36
+  fields:
+    name: Can view category
+    content_type: 9
+    codename: view_category
+- model: auth.permission
+  pk: 37
+  fields:
+    name: Can add consumer
+    content_type: 10
+    codename: add_consumer
+- model: auth.permission
+  pk: 38
+  fields:
+    name: Can change consumer
+    content_type: 10
+    codename: change_consumer
+- model: auth.permission
+  pk: 39
+  fields:
+    name: Can delete consumer
+    content_type: 10
+    codename: delete_consumer
+- model: auth.permission
+  pk: 40
+  fields:
+    name: Can view consumer
+    content_type: 10
+    codename: view_consumer
+- model: auth.permission
+  pk: 41
+  fields:
+    name: Can add store
+    content_type: 11
+    codename: add_store
+- model: auth.permission
+  pk: 42
+  fields:
+    name: Can change store
+    content_type: 11
+    codename: change_store
+- model: auth.permission
+  pk: 43
+  fields:
+    name: Can delete store
+    content_type: 11
+    codename: delete_store
+- model: auth.permission
+  pk: 44
+  fields:
+    name: Can view store
+    content_type: 11
+    codename: view_store
+- model: auth.permission
+  pk: 45
+  fields:
+    name: Can add publisher
+    content_type: 12
+    codename: add_publisher
+- model: auth.permission
+  pk: 46
+  fields:
+    name: Can change publisher
+    content_type: 12
+    codename: change_publisher
+- model: auth.permission
+  pk: 47
+  fields:
+    name: Can delete publisher
+    content_type: 12
+    codename: delete_publisher
+- model: auth.permission
+  pk: 48
+  fields:
+    name: Can view publisher
+    content_type: 12
+    codename: view_publisher
+- model: auth.permission
+  pk: 49
+  fields:
+    name: Can add consumer book
+    content_type: 13
+    codename: add_consumerbook
+- model: auth.permission
+  pk: 50
+  fields:
+    name: Can change consumer book
+    content_type: 13
+    codename: change_consumerbook
+- model: auth.permission
+  pk: 51
+  fields:
+    name: Can delete consumer book
+    content_type: 13
+    codename: delete_consumerbook
+- model: auth.permission
+  pk: 52
+  fields:
+    name: Can view consumer book
+    content_type: 13
+    codename: view_consumerbook
+- model: auth.permission
+  pk: 53
+  fields:
+    name: Can add earning
+    content_type: 14
+    codename: add_earning
+- model: auth.permission
+  pk: 54
+  fields:
+    name: Can change earning
+    content_type: 14
+    codename: change_earning
+- model: auth.permission
+  pk: 55
+  fields:
+    name: Can delete earning
+    content_type: 14
+    codename: delete_earning
+- model: auth.permission
+  pk: 56
+  fields:
+    name: Can view earning
+    content_type: 14
+    codename: view_earning
+- model: auth.group
+  pk: 1
+  fields:
+    name: authors
+    permissions: []
+- model: auth.group
+  pk: 2
+  fields:
+    name: consumers
+    permissions: []
+- model: auth.group
+  pk: 3
+  fields:
+    name: publishers
+    permissions: []
+- model: auth.user
+  pk: 1
+  fields:
+    password: pbkdf2_sha256$180000$sawcnmklRKY1$BAjrLHsk2UYO2CrmosVWrSiwoOVzEj8ZYZIk1GKxjEc=
+    last_login: 2020-03-03 14:53:16.310855+00:00
+    is_superuser: true
+    username: admin
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2020-03-03 14:52:50.257531+00:00
+    groups: []
+    user_permissions: []
+- model: auth.user
+  pk: 2
+  fields:
+    password: pbkdf2_sha256$180000$W1Pu4A5MNvlW$ioz0WwyvNzjgjQ0GdkBPCIbNQhpEqr1OorASRXa7kEw=
+    last_login: null
+    is_superuser: false
+    username: userauthor
+    first_name: John
+    last_name: Doe
+    email: ''
+    is_staff: false
+    is_active: true
+    date_joined: 2020-03-03 14:55:18+00:00
+    groups:
+    - 1
+    user_permissions: []
+- model: auth.user
+  pk: 3
+  fields:
+    password: pbkdf2_sha256$180000$jg1DF8dKAQZd$plmNfFVTGfkt3OkTdaZRkgW5KJgXIDLRP8lZJnxZ1l4=
+    last_login: null
+    is_superuser: false
+    username: userconsumer
+    first_name: Jane
+    last_name: Doe
+    email: ''
+    is_staff: false
+    is_active: true
+    date_joined: 2020-03-03 14:55:26+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 4
+  fields:
+    password: pbkdf2_sha256$180000$FJqXURpmKUXe$+hUPLRjEKoD7Hvs0w9426op/jJd0p80cJQyvlhCi5bM=
+    last_login: null
+    is_superuser: false
+    username: userpublisher
+    first_name: Amazing
+    last_name: Publishers
+    email: ''
+    is_staff: false
+    is_active: true
+    date_joined: 2020-03-03 14:56:11+00:00
+    groups:
+    - 3
+    user_permissions: []
+- model: bookstore.publisher
+  pk: 1
+  fields:
+    publisher: 4
+    logo: ''
+    country: US
+- model: bookstore.author
+  pk: 1
+  fields:
+    author: 2
+    avatar: ''
+    country: US
+- model: bookstore.consumer
+  pk: 1
+  fields:
+    consumer: 3
+    avatar: ''
+    country: US
+- model: admin.logentry
+  pk: 1
+  fields:
+    action_time: 2020-03-03 14:54:27.201778+00:00
+    user: 1
+    content_type: 3
+    object_id: '1'
+    object_repr: authors
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 2
+  fields:
+    action_time: 2020-03-03 14:54:34.425475+00:00
+    user: 1
+    content_type: 3
+    object_id: '2'
+    object_repr: consumers
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 3
+  fields:
+    action_time: 2020-03-03 14:54:40.149761+00:00
+    user: 1
+    content_type: 3
+    object_id: '3'
+    object_repr: publishers
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 4
+  fields:
+    action_time: 2020-03-03 14:55:18.271225+00:00
+    user: 1
+    content_type: 4
+    object_id: '2'
+    object_repr: userauthor
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 5
+  fields:
+    action_time: 2020-03-03 14:55:26.232682+00:00
+    user: 1
+    content_type: 4
+    object_id: '3'
+    object_repr: userconsumer
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 6
+  fields:
+    action_time: 2020-03-03 14:55:44.344776+00:00
+    user: 1
+    content_type: 4
+    object_id: '3'
+    object_repr: userconsumer
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["First name", "Last name", "Groups"]}}]'
+- model: admin.logentry
+  pk: 7
+  fields:
+    action_time: 2020-03-03 14:55:56.445626+00:00
+    user: 1
+    content_type: 4
+    object_id: '2'
+    object_repr: userauthor
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["First name", "Last name", "Groups"]}}]'
+- model: admin.logentry
+  pk: 8
+  fields:
+    action_time: 2020-03-03 14:56:11.948978+00:00
+    user: 1
+    content_type: 4
+    object_id: '4'
+    object_repr: userpublisher
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 9
+  fields:
+    action_time: 2020-03-03 14:56:34.574018+00:00
+    user: 1
+    content_type: 4
+    object_id: '4'
+    object_repr: userpublisher
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["First name", "Last name", "Groups"]}}]'
+- model: admin.logentry
+  pk: 10
+  fields:
+    action_time: 2020-03-03 14:56:41.451588+00:00
+    user: 1
+    content_type: 4
+    object_id: '2'
+    object_repr: userauthor
+    action_flag: 2
+    change_message: '[]'
+- model: admin.logentry
+  pk: 11
+  fields:
+    action_time: 2020-03-03 14:56:50.358474+00:00
+    user: 1
+    content_type: 4
+    object_id: '3'
+    object_repr: userconsumer
+    action_flag: 2
+    change_message: '[]'
+- model: admin.logentry
+  pk: 12
+  fields:
+    action_time: 2020-03-03 14:57:55.636735+00:00
+    user: 1
+    content_type: 9
+    object_id: '1'
+    object_repr: Mythology
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 13
+  fields:
+    action_time: 2020-03-03 14:58:01.786336+00:00
+    user: 1
+    content_type: 9
+    object_id: '2'
+    object_repr: Science
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 14
+  fields:
+    action_time: 2020-03-03 14:58:07.979611+00:00
+    user: 1
+    content_type: 9
+    object_id: '3'
+    object_repr: Comics
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 15
+  fields:
+    action_time: 2020-03-03 14:58:19.559691+00:00
+    user: 1
+    content_type: 7
+    object_id: '1'
+    object_repr: John Doe
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 16
+  fields:
+    action_time: 2020-03-03 14:58:51.214517+00:00
+    user: 1
+    content_type: 11
+    object_id: '1'
+    object_repr: Kindlezon US
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 17
+  fields:
+    action_time: 2020-03-03 14:59:02.020094+00:00
+    user: 1
+    content_type: 11
+    object_id: '2'
+    object_repr: Kindlezon CA
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 18
+  fields:
+    action_time: 2020-03-03 14:59:17.195030+00:00
+    user: 1
+    content_type: 8
+    object_id: '1'
+    object_repr: Early Irish Myths and Sagas
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 19
+  fields:
+    action_time: 2020-03-03 14:59:45.269948+00:00
+    user: 1
+    content_type: 8
+    object_id: '2'
+    object_repr: A Brief History of Time
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 20
+  fields:
+    action_time: 2020-03-03 15:00:09.573979+00:00
+    user: 1
+    content_type: 12
+    object_id: '1'
+    object_repr: Amazing Publishers
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 21
+  fields:
+    action_time: 2020-03-03 15:00:15.937812+00:00
+    user: 1
+    content_type: 8
+    object_id: '3'
+    object_repr: 'Comic Book Culture: An Illustrated History Ron Goulart'
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 22
+  fields:
+    action_time: 2020-03-03 15:03:24.495914+00:00
+    user: 1
+    content_type: 9
+    object_id: '4'
+    object_repr: Fantasy
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 23
+  fields:
+    action_time: 2020-03-03 15:03:32.652995+00:00
+    user: 1
+    content_type: 8
+    object_id: '4'
+    object_repr: Harry Potter and the Sorcerer's Stone
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 24
+  fields:
+    action_time: 2020-03-03 15:50:27.863020+00:00
+    user: 1
+    content_type: 13
+    object_id: '1'
+    object_repr: John Doe                    - 0.0
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 25
+  fields:
+    action_time: 2020-03-03 15:50:35.227121+00:00
+    user: 1
+    content_type: 13
+    object_id: '2'
+    object_repr: Amazing Publishers                    - 0.0
+    action_flag: 1
+    change_message: '[{"added": {}}]'
