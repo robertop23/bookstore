@@ -23,6 +23,6 @@
     "@nuxtjs/vuetify": "^1.10.3",
     "babel-eslint": "^10.1.0",
     "eslint-plugin-nuxt": "^0.5.1",
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.15.8"
   }
 }
